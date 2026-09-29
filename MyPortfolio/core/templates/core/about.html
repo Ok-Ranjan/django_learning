@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    About - Ranjan Portfolio
+{% endblock title %}
+
+
+{% block content %}
+<!-- About Section -->
+<section id="about" class="min-h-screen bg-[#020b1f] text-white relative overflow-hidden py-24">
+
+  <!-- Background Glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.18),transparent_35%),radial-gradient(circle_at_80%_70%,rgba(59,130,246,0.14),transparent_35%)]"></div>
+
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:110px_110px]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <span class="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-indigo-300 tracking-wide">
+        About Me
+      </span>
+
+      <h2 class="text-5xl md:text-6xl font-bold mt-6">
+        Know Who
+        <span class="bg-gradient-to-r from-indigo-400 via-blue-400 to-purple-400 text-transparent bg-clip-text">
+          I Am
+        </span>
+      </h2>
+
+      <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-8">
+        A passionate Computer Science Engineering student focused on building
+        modern web applications, solving real-world problems, and continuously
+        learning emerging technologies.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Left Side Card -->
+      <div class="relative">
+
+        <div class="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl p-10 shadow-2xl">
+
+          <!-- Profile Circle -->
+          <div class="w-28 h-28 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center text-4xl font-bold mx-auto shadow-xl">
+            RK
+          </div>
+
+          <div class="text-center mt-6">
+            <h3 class="text-3xl font-bold">Ranjan Kumar</h3>
+            <p class="text-gray-400 mt-2">B.Tech CSE Student</p>
+          </div>
+
+          <!-- Education -->
+          <div class="mt-8 space-y-5">
+
+            <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+              <h4 class="font-semibold text-indigo-300">College</h4>
+              <p class="text-gray-400 mt-2">
+                Millennium Institute of Technology and Science, Bhopal
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+              <h4 class="font-semibold text-blue-300">Current Focus</h4>
+              <p class="text-gray-400 mt-2">
+                Full Stack Development, DSA, AI Tools & Real Projects
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="text-4xl font-bold leading-tight">
+            Turning Ideas Into
+            <span class="text-indigo-400">Digital Solutions</span>
+          </h3>
+
+          <p class="text-gray-400 text-lg leading-8 mt-6">
+            I enjoy transforming ideas into functional products using modern
+            technologies. My goal is to become a professional software engineer
+            who builds scalable systems and meaningful solutions.
+          </p>
+
+          <p class="text-gray-400 text-lg leading-8 mt-4">
+            I believe in learning by doing, building projects, experimenting
+            with new technologies, and improving every day.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div>
+          <h4 class="text-2xl font-semibold mb-5">Core Skills</h4>
+
+          <div class="flex flex-wrap gap-3">
+
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">HTML</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">CSS</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">JavaScript</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">Tailwind CSS</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">Python</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">Django</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">C++</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">DSA</span>
+            <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10">AI Tools</span>
+
+          </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
+
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-5 text-center">
+            <h3 class="text-2xl font-bold text-indigo-400">3rd</h3>
+            <p class="text-sm text-gray-400 mt-1">Year</p>
+          </div>
+
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-5 text-center">
+            <h3 class="text-2xl font-bold text-blue-400">10+</h3>
+            <p class="text-sm text-gray-400 mt-1">Skills</p>
+          </div>
+
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-5 text-center">
+            <h3 class="text-2xl font-bold text-purple-400">∞</h3>
+            <p class="text-sm text-gray-400 mt-1">Learning</p>
+          </div>
+
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-5 text-center">
+            <h3 class="text-2xl font-bold text-pink-400">24/7</h3>
+            <p class="text-sm text-gray-400 mt-1">Growth</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+{% endblock content %}
+    

@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    background: #333;
+    padding: 0;
+}
+
+nav ul li a{
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1{
+    color: blue;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

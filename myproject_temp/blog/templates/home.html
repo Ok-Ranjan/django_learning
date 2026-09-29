@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templatet</title>
+</head>
+<body>
+    <h1>Template Basic</h1>
+
+    <p>Welcome to blog home page!</p>
+
+    <hr> {# Single variable handle #}
+    <h3>Hello, {{ name }}!</h3>
+    <p>Your age is {{ age }}.</p>
+
+    <hr> {# List handling #}
+    <h3>Skills </h3>
+    <p>main skill: {{ skills.0 }} & {{ skills.1}}</p>
+    <h4>All skills you have: </h4>
+    <ul>
+        {% for skill in skills %}
+            <li> {{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <hr>{# Object Attributes #}
+    <h3>User name - {{ user.name }} </h3>
+    <h3>User age - {{ user.age }} </h3>
+
+    <hr>{# Dictionary Attributes #}
+    <h3>Blog Information</h3>
+    <p>
+        Title : {{ blog.title }}
+        <br>
+        Content: {{ blog.content | safe }}
+        <br>
+        Author: {{ blog.author.name }} 
+        <br>
+        Date: {{ blog.created_at }}
+    </p>
+
+    <hr>{# empty value handling #}
+    <h3> Default Empty value: {{ empty_value | default:"NO value provided"}}</h3>
+    
+</body>
+</html>
