@@ -1,6 +1,11 @@
+
+# Python
+__pycache__/
 venv/
 
-__pycache__/
-migrations/
-
+# Django
+db.sqlite3
 node_modules/
+
+
+.vscode/
