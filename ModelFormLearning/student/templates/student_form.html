@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Student{% endblock %}
+
+{% block content %}
+
+<h2>Student Create Form</h2>
+<a href="{% url 'student:list_of_students' %}">Go Back</a>
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Save Student</button>
+    <button type="reset">Reset</button>
+</form>
+
+{% endblock %}
